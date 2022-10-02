@@ -1,0 +1,26 @@
+import turtle
+class NumberAxis(turtle.Pen):
+    def __init__(self,pensize,pencolor,positve,lenght,pos_step,neg_step):
+        super().__init__(self)
+        self.pensize=pensize
+        self.pencolor=pencolor
+        self.positve = positve
+        self.lenght = lenght
+        self.pos_step = pos_step
+        self.neg_step = neg_step
+    def draw(self):
+        pass
+    def pos_line(self):
+        for i in range(self.pos_step):
+            self.forward(self.lenght)
+            self.right(90)
+            self.forward(5)
+            self.left(90)
+            self.forward(5)
+            self.pu()
+            self.forward(5)
+            self.pd()
+            self.write(i)
+            self.penup()
+            self
+    
